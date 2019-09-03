@@ -5,7 +5,8 @@
         <a-icon type="apple" />
         Tab 1
       </span>
-      Tab 1
+      <rate-component />
+      <comment-component />
     </a-tab-pane>
     <a-tab-pane key="2">
       <span slot="tab">
@@ -17,7 +18,14 @@
   </a-tabs>
 </template>
 <script>
+import RateComponent from "./RateComponent.vue"
+import CommentComponent from "./CommentComponent.vue"
+
 export default {
+  components : {
+    RateComponent,
+    CommentComponent
+  },
   data() {
     return {
     //   collapsed     : false,
